@@ -1,17 +1,70 @@
-<!DOCTYPE html>
-<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<!doctype html>
+<html>
 <head>
-  {{ partial "head.html" . }}
+	<meta http-equiv = "Content-Type" content = "text/html; charset=utf-8">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=Edge">
+	<title>Russian Language Center</title>
+	<meta name = "description" content = "Russian Language Center">
+	<meta name = "keywords" content = "Russian Language Center">
+	<meta name = "author" content = "toolbox.team">
+
+	<meta name="google-site-verification" content="P_X7V78auSYqUnqb9BdJ_JNRc_vOJ1KS-hK1SqUeWyw" />
+	<meta name="yandex-verification" content="93d4aa560d616587" />
+
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+  {{ with (resources.GetMatch "**/engine.css") }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" type="text/css" media="screen"/>
+  {{ end }}
+
+  {{ with (resources.GetMatch "**/custom.css") }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" type="text/css" media="screen"/>
+  {{ end }}
+
 </head>
-<body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <main>
+
+<body class="page-body">
+<div id = "mainMenuCarrier">
+	<div class="navbar navbar-inverse" id = "mainMenu" role="navigation">
+		<div class = "container3">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse">
+
+        {{- partial "menu.html" (
+           dict
+           "menu" .Site.Menus.main
+           )
+        }}
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<main class="page-main">
     {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+</main>
+
+<footer>
+
+{{ with (resources.GetMatch "**/engine.min.js") }}
+<script src = "{{ .RelPermalink }}"></script>
+{{ end }}
+
+{{ with (resources.GetMatch "**/custom.min.js") }}
+<script src = "{{ .RelPermalink }}"></script>
+{{ end }}
+
+</footer>
+
+
 </body>
 </html>
