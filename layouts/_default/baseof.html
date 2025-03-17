@@ -36,22 +36,43 @@
 				</button>
 			</div>
 			<div class="collapse navbar-collapse">
-
         {{- partial "menu.html" (
            dict
            "menu" .Site.Menus.main
            )
         }}
-
 			</div>
 		</div>
 	</div>
 </div>
 
+<div id = "header">
+	<div class = "container2">
+		<div class = "row2">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 left">
+				<a href = "/"><img src = "/img/logo.jpg" class = "img-responsive" alt = "Russian Language center"></a>
+			</div>
+			<div class="col-lg-5 col-md-5 col-sm-3 col-xs-6 content">
+				<a class = "button" href = "/contacts/">Apply now</a>
+				<div class = "item hidden-sm hidden-xs">
+					Join us to learn Russian and to know more about the&nbsp;Russian-speaking world
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 right">
+				<div class = "contacts">
+					<div class = "contact"><span class = "email">{{ .Site.Params.email }}</span></div>
+					<div class = "contact"><span class = "phone"><span class = 'textPhone'>{{ .Site.Params.mobile }}</span></span></div>
+					<div class = "contact"><a href="whatsapp:85260174642" class="phone2"><span class = 'textPhone'>{{ .Site.Params.whatsapp }}</span></a></div>
+					<div class = "contact"><span class = "address">{{ delimit .Site.Params.address  "<br>"  | safeHTML }}</span></div>
+				</div>
+			</div>
+		</div>
 
-<main class="page-main">
-    {{ block "main" . }}{{ end }}
-</main>
+	</div>
+	<div class = "clear"></div>
+</div>
+
+	    {{ block "main" . }}{{ end }}
 
 <footer>
 
