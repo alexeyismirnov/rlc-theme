@@ -1,0 +1,13 @@
+<p><div class = "tilesCarrier">
+
+{{ range .Page.Pages }}
+<div class = "col-sm-4 itemCarrier">
+		<div class = "flex item">
+			<a class = "flex" href = "{{ .RelPermalink }}">
+				<h3>{{ .LinkTitle }}</h3>
+			</a>
+	</div>
+</div>
+{{ end }}
+
+<div class = "clear"/></div></p>
