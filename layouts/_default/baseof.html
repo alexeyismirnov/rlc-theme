@@ -75,6 +75,45 @@
 	    {{ block "main" . }}{{ end }}
 
 <footer>
+<div id = "footer">
+	<div class = "container2">
+			<div class = "col-lg-2 left">
+
+			<table>
+				<tr>
+					<td><a href = "https://www.facebook.com/rlchk/" target = "blank" rel = "nofollow"><img src = "/img/social/fb.png" alt = ""></a></td>
+					<td><a href = "https://www.facebook.com/russian.for.kids.hk/" target = "blank" rel = "nofollow"><img src = "/img/social/fb_c.png" alt = ""></a></td>
+					<td><a href = "https://www.instagram.com/russian_language_hk/" target = "blank" rel = "nofollow"><img src = "/img/social/ig.png" alt = ""></a></td>
+					<td><a href = "https://www.youtube.com/channel/UCPu1eSGDDynlp70gvLBMQpg" target = "blank" rel = "nofollow"><img src = "/img/social/yt.png" alt = ""></a></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class = "col-lg-8 col-md-8 col-sm-8 content">
+			<div class = "contacts">
+				<div class = "title">Contact us!</div>
+				<div class = "col-sm-4 item">
+					<span class = "phone"><span class = 'textPhone'>{{ .Site.Params.mobile }}</span></span>
+				</div>
+				<div class = "col-sm-4 item">
+					<a href="whatsapp:85260174642" class="phone2"><span class = 'textPhone'>{{ .Site.Params.whatsapp }}</span></a>
+				</div>
+				<div class = "col-sm-4 item">
+					<span class = "email">{{ .Site.Params.email }}</span>
+				</div>
+				<div class = "clear"></div>
+
+			</div>
+	</div>
+
+<div class = "col-lg-2 col-md-4 col-sm-4 right">
+	<div style = "margin-bottom:30px;">Russian Language Center '25</div>
+	<div><span class = "address">12 FL., Kingdom Power<br> Commercial Building,<br> 32-36 Des Voeux Rd W, Sheung Wan</span></div>
+</div>
+<div class = "clear"></div>
+
+</div>
+</div>
 
 {{ with (resources.GetMatch "**/engine.min.js") }}
 <script src = "{{ .RelPermalink }}"></script>
