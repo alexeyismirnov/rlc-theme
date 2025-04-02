@@ -63,7 +63,7 @@
 					<div class = "contact"><span class = "email">{{ .Site.Params.email }}</span></div>
 					<div class = "contact"><span class = "phone"><span class = 'textPhone'>{{ .Site.Params.mobile }}</span></span></div>
 					<div class = "contact"><a href="whatsapp:85260174642" class="phone2"><span class = 'textPhone'>{{ .Site.Params.whatsapp }}</span></a></div>
-					<div class = "contact"><span class = "address">{{ delimit .Site.Params.address  "<br>"  | safeHTML }}</span></div>
+					<div class = "contact"><span class = "address">{{ delimit .Site.Params.address2  "<br>"  | safeHTML }}</span></div>
 				</div>
 			</div>
 		</div>
@@ -108,7 +108,7 @@
 
 <div class = "col-lg-2 col-md-4 col-sm-4 right">
 	<div style = "margin-bottom:30px;">Russian Language Center '25</div>
-	<div><span class = "address">12 FL., Kingdom Power<br> Commercial Building,<br> 32-36 Des Voeux Rd W, Sheung Wan</span></div>
+	<div><span class = "address">{{ delimit .Site.Params.address2  "<br>"  | safeHTML }}</span></div>
 </div>
 <div class = "clear"></div>
 

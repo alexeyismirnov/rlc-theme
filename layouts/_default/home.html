@@ -1,5 +1,15 @@
 {{ define "main" }}
 
+<div id = "sliderCarrier" class = "block container-fluid">
+	<div id = "slider">
+		{{ partial "slider" (dict "id" "courses/new_course_for_complete_beginners" "white" true )}}
+		{{ partial "slider" (dict "id" "courses/russian_for_business" )}}
+		{{ partial "slider" (dict "id" "courses_for_kids" )}}
+		{{ partial "slider" (dict "id" "about_us" "white" true )}}
+
+	</div>
+</div>
+
 <div id = "languages">
 	<h2>Languages</h2>
 	<div class = "col-sm-6">
@@ -102,7 +112,5 @@
 				</div>
 					</div>
 	</div></div>
-
-
 
 {{ end }}

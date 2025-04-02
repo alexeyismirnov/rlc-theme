@@ -1,0 +1,21 @@
+
+{{ $id := .id }}
+{{ $page := site.GetPage $id }}
+
+{{ $white := "" }}
+
+{{ if (.white | default false)  }}
+  {{ $white = "white" }}
+{{ end }}
+
+<div class = "item {{ $white }}" style = "background-image:url({{ $page.Params.sliderImage }})">
+  <div class = "container2">
+    <div class = "sliderText">
+      <div class = "title">{{ $page.Params.sliderTitle }}</div>
+      <div class = "descr">
+  							{{ $page.Params.sliderText }}
+  		</div>
+      <a href = "{{ $page.RelPermalink }}" class = "button">Read more</a>
+    </div>
+  </div>
+</div>
