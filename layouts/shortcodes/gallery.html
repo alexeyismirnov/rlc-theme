@@ -1,0 +1,18 @@
+
+{{ $images := (resources.Match (.Get "dir")) }}
+
+{{ $data_gallery := slice }}
+
+{{ range $original := $images }}
+  {{ if eq $original.ResourceType "image" }}
+    {{ $data_gallery = $data_gallery | append (dict "src" $original.RelPermalink "width" 800 "height" 600) }}
+  {{ end }}
+{{ end }}
+
+<div class = 'gallery' data-slick = '1' style = 'padding:5px 0px 5px 0px' data-gallery='{{ $data_gallery | jsonify }}'>
+  {{ range $original := $images }}
+    {{ if eq $original.ResourceType "image" }}
+<div class = 'galleryPreview  col-lg-1-5 col-md-4 col-sm-4 col-xs-6' data-img = '{{ $original.RelPermalink }}' style = 'height:200px;cursor:pointer;float:left;background-image:url({{ $original.RelPermalink }});background-size:cover;background-position:center center;'> </div>
+    {{ end }}
+  {{ end }}
+</div>

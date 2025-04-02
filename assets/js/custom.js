@@ -724,15 +724,15 @@ g);g.fixNavigationButtons()}})};e.fn.bootstrapWizard.defaults={tabClass:"nav nav
 					}
 				},
 				slick: {
-					nextArrow:"<div class = 'slick-next' style = 'width:11px;height:19px;background:url(/_res/img/arrows.png);background-position:right top;right:20px;'> </div>",
-					prevArrow:"<div class = 'slick-prev' style = 'width:11px;height:19px;background:url(/_res/img/arrows.png);background-position:left top;left:20px;'> </div>",
+					nextArrow:"<div class = 'slick-next' style = 'width:11px;height:19px;background:url(/img/arrows.png);background-position:right top;right:20px;'> </div>",
+					prevArrow:"<div class = 'slick-prev' style = 'width:11px;height:19px;background:url(/img/arrows.png);background-position:left top;left:20px;'> </div>",
 					speed: 800
 				}
 			},
 			main: {
 				slick: {
-					nextArrow:"<div class = 'slick-next' style = 'width:11px;height:19px;background:url(/_res/img/arrows.png);background-position:right top;right:-45px;'> </div>",
-					prevArrow:"<div class = 'slick-prev' style = 'width:11px;height:19px;background:url(/_res/img/arrows.png);background-position:left top;left:-45px;'> </div>",
+					nextArrow:"<div class = 'slick-next' style = 'width:11px;height:19px;background:url(/img/arrows.png);background-position:right top;right:-45px;'> </div>",
+					prevArrow:"<div class = 'slick-prev' style = 'width:11px;height:19px;background:url(/img/arrows.png);background-position:left top;left:-45px;'> </div>",
 				}
 			}
 		});
@@ -908,8 +908,8 @@ $(".spoiler-trigger").click(function() {
 			speed: 300,
 			slidesToShow: 1,
 			arrows: true,
-			nextArrow:"<div class = 'slick-next' style = 'width:22px;height:37px;background:url(/_res/img/arrows.png);background-position:right top;'> </div>",
-			prevArrow:"<div class = 'slick-prev' style = 'width:22px;height:37px;background:url(/_res/img/arrows.png);background-position:left top;'> </div>",
+			nextArrow:"<div class = 'slick-next' style = 'width:22px;height:37px;background:url(/img/arrows.png);background-position:right top;'> </div>",
+			prevArrow:"<div class = 'slick-prev' style = 'width:22px;height:37px;background:url(/img/arrows.png);background-position:left top;'> </div>",
 			adaptiveHeight: true,
 			autoplay: true,
 			autoplaySpeed: 8000,
@@ -933,8 +933,8 @@ $(".spoiler-trigger").click(function() {
 			speed: 300,
 			slidesToShow: 3,
 			arrows: true,
-			nextArrow:"<div class = 'slick-next' style = 'width:22px;height:37px;right:-30px;background:url(/_res/img/arrows.png);background-position:right top;'> </div>",
-			prevArrow:"<div class = 'slick-prev' style = 'width:22px;height:37px;left:-30px;background:url(/_res/img/arrows.png);background-position:left top;'> </div>",
+			nextArrow:"<div class = 'slick-next' style = 'width:22px;height:37px;right:-30px;background:url(/img/arrows.png);background-position:right top;'> </div>",
+			prevArrow:"<div class = 'slick-prev' style = 'width:22px;height:37px;left:-30px;background:url(/img/arrows.png);background-position:left top;'> </div>",
 			/*adaptiveHeight: true,
 			autoplay: true,
 			autoplaySpeed: 8000,
@@ -958,8 +958,8 @@ $(".spoiler-trigger").click(function() {
 			speed: 300,
 			slidesToShow: 2,
 			arrows: true,
-			nextArrow:"<div class = 'slick-next' style = 'width:22px;height:37px;right:-30px;background:url(/_res/img/arrows.png);background-position:right top;'> </div>",
-			prevArrow:"<div class = 'slick-prev' style = 'width:22px;height:37px;left:-30px;background:url(/_res/img/arrows.png);background-position:left top;'> </div>",
+			nextArrow:"<div class = 'slick-next' style = 'width:22px;height:37px;right:-30px;background:url(/img/arrows.png);background-position:right top;'> </div>",
+			prevArrow:"<div class = 'slick-prev' style = 'width:22px;height:37px;left:-30px;background:url(/img/arrows.png);background-position:left top;'> </div>",
 			/*adaptiveHeight: true,
 			autoplay: true,
 			autoplaySpeed: 8000,
@@ -983,8 +983,8 @@ $(".spoiler-trigger").click(function() {
 			speed: 300,
 			slidesToShow: 5,
 			arrows: true,
-			nextArrow:"<div class = 'slick-next' style = 'width:22px;top:40%;height:37px;right:-30px;background:url(/_res/img/arrows.png);background-position:right top;'> </div>",
-			prevArrow:"<div class = 'slick-prev' style = 'width:22px;top:40%;height:37px;left:-30px;background:url(/_res/img/arrows.png);background-position:left top;'> </div>",
+			nextArrow:"<div class = 'slick-next' style = 'width:22px;top:40%;height:37px;right:-30px;background:url(/img/arrows.png);background-position:right top;'> </div>",
+			prevArrow:"<div class = 'slick-prev' style = 'width:22px;top:40%;height:37px;left:-30px;background:url(/img/arrows.png);background-position:left top;'> </div>",
 			/*adaptiveHeight: true,
 			autoplay: true,
 			autoplaySpeed: 8000,
@@ -1026,8 +1026,8 @@ $(".spoiler-trigger").click(function() {
 			speed: 300,
 			slidesToShow: 1,
 			arrows: true,
-			nextArrow:"<div class = 'slick-next' style = 'width:22px;top:40%;height:37px;right:-30px;background:url(/_res/img/arrows.png);background-position:right top;'> </div>",
-			prevArrow:"<div class = 'slick-prev' style = 'width:22px;top:40%;height:37px;left:-30px;background:url(/_res/img/arrows.png);background-position:left top;'> </div>",
+			nextArrow:"<div class = 'slick-next' style = 'width:22px;top:40%;height:37px;right:-30px;background:url(/img/arrows.png);background-position:right top;'> </div>",
+			prevArrow:"<div class = 'slick-prev' style = 'width:22px;top:40%;height:37px;left:-30px;background:url(/img/arrows.png);background-position:left top;'> </div>",
 			adaptiveHeight: true,
 			autoplay: true,
 			autoplaySpeed: 5000,
@@ -1088,8 +1088,8 @@ $(".spoiler-trigger").click(function() {
 			speed: 300,
 			slidesToShow: 3,
 			arrows: true,
-			nextArrow:"<div class = 'slick-next' style = 'width:22px;height:37px;background:url(/_res/img/arrows.png);background-position:right top;'> </div>",
-			prevArrow:"<div class = 'slick-prev' style = 'width:22px;height:37px;background:url(/_res/img/arrows.png);background-position:left top;'> </div>",
+			nextArrow:"<div class = 'slick-next' style = 'width:22px;height:37px;background:url(/img/arrows.png);background-position:right top;'> </div>",
+			prevArrow:"<div class = 'slick-prev' style = 'width:22px;height:37px;background:url(/img/arrows.png);background-position:left top;'> </div>",
 			adaptiveHeight: true,
 			responsive: [
 			{
@@ -1166,15 +1166,15 @@ $(document).ready( function() {
 					}
 				},
 				slick: {
-					nextArrow:"<div class = 'slick-next' style = 'width:22px;height:37px;background:url(/_res/img/arrows.png);background-position:right top;'> </div>",
-					prevArrow:"<div class = 'slick-prev' style = 'width:22px;height:37px;background:url(/_res/img/arrows.png);background-position:left top;'> </div>",
+					nextArrow:"<div class = 'slick-next' style = 'width:22px;height:37px;background:url(/img/arrows.png);background-position:right top;'> </div>",
+					prevArrow:"<div class = 'slick-prev' style = 'width:22px;height:37px;background:url(/img/arrows.png);background-position:left top;'> </div>",
 					speed: 300
 				}
 			},
 			main: {
 				slick: {
-					nextArrow:"<div class = 'slick-next' style = 'width:22px;height:37px;right:-25px;background:url(/_res/img/arrows.png);background-position:right top;'> </div>",
-					prevArrow:"<div class = 'slick-prev' style = 'width:22px;height:37px;left:-25px;background:url(/_res/img/arrows.png);background-position:left top;'> </div>",
+					nextArrow:"<div class = 'slick-next' style = 'width:22px;height:37px;right:-25px;background:url(/img/arrows.png);background-position:right top;'> </div>",
+					prevArrow:"<div class = 'slick-prev' style = 'width:22px;height:37px;left:-25px;background:url(/img/arrows.png);background-position:left top;'> </div>",
 				}
 			}
 		});
